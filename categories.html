@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Store - Categories</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <!-- Same header as index.html -->
+    </header>
+
+    <main>
+        <section class="categories">
+            <div class="search-filter">
+                <input type="text" placeholder="Search products...">
+                <select id="category-filter">
+                    <option value="all">All Categories</option>
+                    <option value="groceries">Groceries</option>
+                    <option value="snacks">Snacks</option>
+                    <option value="beverages">Beverages</option>
+                    <option value="household">Household</option>
+                </select>
+                <select id="sort-by">
+                    <option value="popular">Popular</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                    <option value="newest">Newest</option>
+                </select>
+            </div>
+
+            <div class="category-list">
+                <div class="category-card" data-category="groceries">
+                    <img src="images/groceries.jpg" alt="Groceries">
+                    <h3>Groceries</h3>
+                </div>
+                <div class="category-card" data-category="snacks">
+                    <img src="images/snacks.jpg" alt="Snacks">
+                    <h3>Snacks</h3>
+                </div>
+                <div class="category-card" data-category="beverages">
+                    <img src="images/beverages.jpg" alt="Beverages">
+                    <h3>Beverages</h3>
+                </div>
+                <div class="category-card" data-category="household">
+                    <img src="images/household.jpg" alt="Household">
+                    <h3>Household</h3>
+                </div>
+            </div>
+
+            <div class="products-grid">
+                <!-- Products will be loaded here by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Store - Admin Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="General Store Logo">
+            <h1>General Store - Admin</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="admin.html">Dashboard</a></li>
+                <li><a href="#orders">Orders</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#inventory">Inventory</a></li>
+                <li><a href="#reports">Reports</a></li>
+            </ul>
+        </nav>
+        <div class="admin-actions">
+            <button id="logout-btn">Logout</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="admin-dashboard">
+            <div class="stats">
+                <div class="stat-card">
+                    <h3>Today's Orders</h3>
+                    <p class="stat-value">24</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Pending Orders</h3>
+                    <p class="stat-value">8</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Low Stock</h3>
+                    <p class="stat-value">5</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Today's Revenue</h3>
+                    <p class="stat-value">₹12,450</p>
+                </div>
+            </div>
+
+            <div class="recent-orders">
+                <h2>Recent Orders</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Customer</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>GS1001</td>
+                            <td>Rahul Sharma</td>
+                            <td>₹850</td>
+                            <td><span class="status pending">Pending</span></td>
+                            <td><button class="update-status">Update</button></td>
+                        </tr>
+                        <tr>
+                            <td>GS1000</td>
+                            <td>Priya Patel</td>
+                            <td>₹1,250</td>
+                            <td><span class="status shipped">Shipped</span></td>
+                            <td><button class="update-status">Update</button></td>
+                        </tr>
+                        <tr>
+                            <td>GS0999</td>
+                            <td>Amit Singh</td>
+                            <td>₹550</td>
+                            <td><span class="status delivered">Delivered</span></td>
+                            <td><button class="update-status">Update</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="quick-actions">
+                <button id="add-product">Add New Product</button>
+                <button id="view-inventory">View Inventory</button>
+                <button id="generate-report">Generate Report</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 General Store Admin Panel</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

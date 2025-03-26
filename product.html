@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Store - Product</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <!-- Same header as index.html -->
+    </header>
+
+    <main>
+        <section class="product-details">
+            <div class="product-images">
+                <img src="images/product1.jpg" alt="Product Image" id="main-image">
+                <div class="thumbnail-container">
+                    <img src="images/product1-thumb1.jpg" alt="Thumbnail" class="thumbnail">
+                    <img src="images/product1-thumb2.jpg" alt="Thumbnail" class="thumbnail">
+                    <img src="images/product1-thumb3.jpg" alt="Thumbnail" class="thumbnail">
+                </div>
+            </div>
+            <div class="product-info">
+                <h1 id="product-name">Product Name</h1>
+                <p class="price" id="product-price">₹199</p>
+                <div class="rating">
+                    <span class="stars">★★★★☆</span>
+                    <span class="review-count">(42 reviews)</span>
+                </div>
+                <p class="description" id="product-description">
+                    This is a detailed description of the product. It includes all the features, 
+                    benefits, and specifications that a customer might want to know before purchasing.
+                </p>
+                <div class="quantity-selector">
+                    <button class="quantity-btn minus">-</button>
+                    <input type="number" value="1" min="1" id="quantity">
+                    <button class="quantity-btn plus">+</button>
+                </div>
+                <button class="add-to-cart" id="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+
+        <section class="related-products">
+            <h2>You May Also Like</h2>
+            <div class="products">
+                <!-- Related products will be loaded here by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
